@@ -19,38 +19,33 @@ public class CuartoPrograma {
         String strRespuestaUsiario;
         int i;
         
-        for (i = 0; i < numeros.length; i++)
-        {
-            System.out.printf("Introduzca un nümero entero:");
+        for (i = 0; i < numeros.length; i++){
+            System.out.printf("Introduzca un número entero:");
             numeros[i] = sc.nextInt();
         }
         
-        System.out.println("Vector de nümeros ingresados");
+        System.out.println("Vector de números ingresados");
         
-        for (i = 0; i < numeros.length; i++)
-        {
+        for (i = 0; i < numeros.length; i++){
             System.out.println(numeros[i]);
         }
         
-        System.out.println("Vector de nümeros ordenados");
-        
+        System.out.println("Vector de números ordenados");
         Arrays.sort(numeros);
         
-        for (i = 0; i < numeros.length; i++)
-        {
+        for (i = 0; i < numeros.length; i++){
             System.out.println(numeros[i]);
         }
         
-        System.out.printf("Introduzca el nümero que desea buscar:");
+        System.out.printf("Introduzca el número que desea buscar:");
         intNumBus = sc.nextInt();
         
-        if (Arrays.binarySearch(numeros,intNumBus)>0)
-        {
-            System.out.println("El nümero buscado (" + intNumBus + ") si existe en el vector!");
+        if (Arrays.binarySearch(numeros,intNumBus)>0){
+            System.out.println("El número buscado (" + intNumBus + ") si existe en el vector!");
         }
-        else
-        {
-            System.out.println("El nümero buscado (" + intNumBus + ") no existe en el vector!");
+        
+        else{
+            System.out.println("El número buscado (" + intNumBus + ") no existe en el vector!");
         }
         
     }
