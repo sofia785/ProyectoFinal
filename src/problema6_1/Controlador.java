@@ -1,12 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package problema6_1;
 
+import java.util.Date;
+
 /**
- *
  * @author Sofia
  */
 public class Controlador {
@@ -14,15 +10,14 @@ public class Controlador {
     SistemaNotas sn = new SistemaNotas(2);
     Vista vi = new Vista(sn);
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    public double[] calificaciones;
+    private int indice;
+    private String[] strNomAlums;
+    private String[] strNomPadrs;
+    private String[] strPtsObt;
+    private String strNomProf;
+    private String strNomCurso;
+    private String strcodCurso;
     
     
        public void iniciar() {
